@@ -18,6 +18,7 @@ class AddMovieViewController: UIViewController {
     @IBOutlet weak var enterMovieTextField: UITextField!
     @IBOutlet weak var addMovieButton: UIButton!
     
+    
     var delegate: NewMovieDelegate?
     
     override func viewDidLoad() {
@@ -27,6 +28,15 @@ class AddMovieViewController: UIViewController {
     }
     
     @IBAction func addMovieButtonTapped(_ sender: UIButton) {
+        
+        if let newMovie = enterMovieTextField.text,
+            !newMovie.isEmpty {
+            let movie = Movie(name: newMovie)
+            
+            delegate?.newMovieWasAdded(movie: movie)
+            navigationController?.popViewController(animated: true)
+        }
+      
     }
     
 }
