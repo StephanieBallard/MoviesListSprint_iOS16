@@ -9,6 +9,10 @@
 import UIKit
 
 class MovieListViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var movies = [Movie]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,4 +31,14 @@ class MovieListViewController: UIViewController {
     }
     */
 
+}
+
+extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }

@@ -74,10 +74,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ddj-5v-BIV" id="pVj-am-6re"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6F-dp-TcD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960.86956521739137" y="57.589285714285708"/>
+            <point key="canvasLocation" x="867" y="58"/>
         </scene>
         <!--Add Movie View Controller-->
         <scene sceneID="Vr3-a2-YoS">
@@ -120,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Up-Cc-KD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="58"/>
+            <point key="canvasLocation" x="1587" y="58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kmt-MU-83o">
@@ -138,7 +141,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41T-bo-u5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.724637681159422" y="57.589285714285708"/>
+            <point key="canvasLocation" x="133" y="58"/>
         </scene>
     </scenes>
 </document>
