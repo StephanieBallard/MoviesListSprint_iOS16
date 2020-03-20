@@ -26,7 +26,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="230" translatesAutoresizingMaskIntoConstraints="NO" id="LlO-By-pQc">
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LlO-By-pQc">
                                                     <rect key="frame" x="18.5" y="7" width="377" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKf-qr-xBr">
@@ -36,7 +36,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWi-JZ-4RK">
-                                                            <rect key="frame" x="313.5" y="0.0" width="63.5" height="30"/>
+                                                            <rect key="frame" x="313" y="0.0" width="64" height="30"/>
                                                             <state key="normal" title="Not Seen"/>
                                                             <connections>
                                                                 <action selector="hasBeenSeenButtonTapped:" destination="Ieg-kl-a9O" eventType="touchUpInside" id="fc7-hf-doL"/>
