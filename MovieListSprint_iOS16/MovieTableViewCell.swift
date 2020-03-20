@@ -13,6 +13,11 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var hasBeenSeenButton: UIButton!
     
+    var movie: Movie? {
+        didSet {
+            updateViews()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,6 +25,8 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     @IBAction func hasBeenSeenButtonTapped(_ sender: UIButton) {
+        movie?.hasBeenSeen.toggle()
+        updateViews()
     }
     
     
@@ -29,4 +36,12 @@ class MovieTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    private func updateViews() {
+        movieTitleLabel.text = movie?.name
+        if movie?.hasBeenSeen == false {
+            hasBeenSeenButton.setTitle("Not Seen", for: .normal)
+        } else {
+            hasBeenSeenButton.setTitle("Seen", for: .normal)
+        }
+    }
 }
