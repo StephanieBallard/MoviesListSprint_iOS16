@@ -10,7 +10,7 @@
         <!--Movie List-->
         <scene sceneID="JMJ-C7-QpF">
             <objects>
-                <viewController id="bdg-hC-XO2" sceneMemberID="viewController">
+                <viewController id="bdg-hC-XO2" customClass="MovieListViewController" customModule="MovieListSprint_iOS16" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lpr-G4-kJl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" id="Ieg-kl-a9O">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" id="Ieg-kl-a9O" customClass="MovieTableViewCell" customModule="MovieListSprint_iOS16" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ieg-kl-a9O" id="oTm-mB-bDA">
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="960.86956521739137" y="57.589285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Movie View Controller-->
         <scene sceneID="Vr3-a2-YoS">
             <objects>
-                <viewController id="cjY-Po-oIv" sceneMemberID="viewController">
+                <viewController id="cjY-Po-oIv" customClass="AddMovieViewController" customModule="MovieListSprint_iOS16" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Ce-Je-d7j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
