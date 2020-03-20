@@ -38,6 +38,9 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWi-JZ-4RK">
                                                             <rect key="frame" x="313.5" y="0.0" width="63.5" height="30"/>
                                                             <state key="normal" title="Not Seen"/>
+                                                            <connections>
+                                                                <action selector="hasBeenSeenButtonTapped:" destination="Ieg-kl-a9O" eventType="touchUpInside" id="fc7-hf-doL"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -50,6 +53,10 @@
                                                 <constraint firstItem="LlO-By-pQc" firstAttribute="top" relation="lessThanOrEqual" secondItem="oTm-mB-bDA" secondAttribute="topMargin" constant="-4" id="ews-nu-sE7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hasBeenSeenButton" destination="VWi-JZ-4RK" id="6a8-2x-F8F"/>
+                                            <outlet property="movieTitleLabel" destination="AKf-qr-xBr" id="vc7-0Z-8nX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -70,7 +77,7 @@
                     <navigationItem key="navigationItem" title="Movie List" id="T38-w0-MPh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8w4-sd-hUg">
                             <connections>
-                                <segue destination="cjY-Po-oIv" kind="show" identifier="MovieDetailSegue" id="EGj-vv-w6K"/>
+                                <segue destination="cjY-Po-oIv" kind="show" identifier="AddMovieSegue" id="lDx-QE-Rp1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,6 +114,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gi-37-1og">
                                         <rect key="frame" x="0.0" y="83.5" width="374" height="30"/>
                                         <state key="normal" title="Add movie"/>
+                                        <connections>
+                                            <action selector="addMovieButtonTapped:" destination="cjY-Po-oIv" eventType="touchUpInside" id="1Y3-Iq-8aR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -120,6 +130,11 @@
                         <viewLayoutGuide key="safeArea" id="WsP-6A-dJk"/>
                     </view>
                     <navigationItem key="navigationItem" id="OIk-9R-kQf"/>
+                    <connections>
+                        <outlet property="addMovieButton" destination="8Gi-37-1og" id="8Iv-70-0MW"/>
+                        <outlet property="addNewMovieLabel" destination="maZ-MM-W1F" id="yRf-tO-BbS"/>
+                        <outlet property="enterMovieTextField" destination="lbE-05-bMs" id="6gu-1N-8sV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Up-Cc-KD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

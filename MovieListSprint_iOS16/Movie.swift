@@ -8,5 +8,5 @@
 
 struct Movie {
     let name: String
-    var isSeen: Bool = false
+    var hasBeenSeen: Bool = false
 }
